@@ -8,7 +8,7 @@
                                                                           
 ###########################################################################
 
-A lightweight Pylons-like template using Flask.
+A lightweight Pylons-like app template using Flask.
 
 To setup, do the standard dance:
 
@@ -20,19 +20,25 @@ That creates a virtualenv and install all your packages. Here's some other stuff
 1. Activate your environment
     - source env/bin/activate
 
-#################################
-TODO...the rest of this shit...
-#################################
-
 2. Starting fresh
+    - Remove the examples:
+        - rm application/controllers/foo.py
+        - rm application/models/foo.py
 
 3. Configs
+    - Edit the file this.environment and change your environment
+    - All the configs can be found in application/config/config.py
+    - To add a config, just add a class to config.py and inherit from Config
+    - Add a key value pair to the environments dict in config.py like (k=name, v=class)
 
 4. Database migrations
+    - TODO: migrate stuff
 
 5. Creating a controller
-    - From the root dir, just run 
+    - From the root dir, just run fab controller:NAME
 
 6. Models and DB access:
     - Template assumes SQLAlchemy
-
+    - Models go in application/models
+    - from meta import Session
+    - Session is wired up with your config's database connection when you run the app with manage.py. You can just run Session.query, etc. as you do in Pylons.

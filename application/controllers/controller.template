@@ -1,0 +1,3 @@
+from flask import Module
+
+%(name)s = Module(__name__, url_prefix='/%(name)s')

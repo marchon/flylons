@@ -1,0 +1,38 @@
+###########################################################################
+ _______  __      ____    ____  __        ______   .__   __.      _______.
+|   ____||  |     \   \  /   / |  |      /  __  \  |  \ |  |     /       |
+|  |__   |  |      \   \/   /  |  |     |  |  |  | |   \|  |    |   (----`
+|   __|  |  |       \_    _/   |  |     |  |  |  | |  . `  |     \   \    
+|  |     |  `----.    |  |     |  `----.|  `--'  | |  |\   | .----)   |   
+|__|     |_______|    |__|     |_______| \______/  |__| \__| |_______/    
+                                                                          
+###########################################################################
+
+A lightweight Pylons-like template using Flask.
+
+To setup, do the standard dance:
+
+cd setup
+sh ./bootstrap.sh
+
+That creates a virtualenv and install all your packages. Here's some other stuff you can do:
+
+1. Activate your environment
+    - source env/bin/activate
+
+#################################
+TODO...the rest of this shit...
+#################################
+
+2. Starting fresh
+
+3. Configs
+
+4. Database migrations
+
+5. Creating a controller
+    - From the root dir, just run 
+
+6. Models and DB access:
+    - Template assumes SQLAlchemy
+

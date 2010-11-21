@@ -24,7 +24,7 @@ echo $MY_PYTHON
 echo "><><><><><><><><><><><><><><><><><"
 echo "Step 1: Creating a virtualenv"
 echo "><><><><><><><><><><><><><><><><><"
-virtualenv ../$OUTPUT_DIR --no-site-packages
+virtualenv ../$OUTPUT_DIR
 exit_on_failure "Couldn't install a virtualenv. You probably don't have that shit installed..."
 
 echo "><><><><><><><><><><><><><><><><><><><><><><><><><><><><"
